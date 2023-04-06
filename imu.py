@@ -37,4 +37,4 @@ while True:
     print("accelerometer (x,y,z): ({},{},{})".format(accel_x, accel_y, accel_z))
     print("gyroscope (x,y,z): ({},{},{})".format(gyro_x, gyro_y, gyro_z))
 
-    time.sleep(0.1)
+    time.sleep(1.5)
