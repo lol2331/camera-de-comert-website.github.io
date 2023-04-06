@@ -6,10 +6,10 @@ bus = smbus2.SMBus(1)
 address = 0x76
 
 # Initialize the BME280 sensor
-calibration_params = bme280.load_calibration_params(bus, address)
+bme280.setup(bus, address)
 
 # Read temperature, humidity, and pressure data
-data = bme280.sample(bus, address, calibration_params)
+data = bme280.readData()
 temp = data.temperature
 hum = data.humidity
 pres = data.pressure
